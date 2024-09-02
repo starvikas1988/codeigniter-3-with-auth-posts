@@ -4,7 +4,7 @@
     <title>Create Post</title>
 </head>
 <body>
-<a href="<?php echo base_url('index.php/auth/logout'); ?>">Logout</a>
+<a href="<?php echo base_url('auth/logout'); ?>">Logout</a>
 <?php if(isset($error)): ?>
         <p><?php print_r($error); ?></p>
     <?php endif; ?>

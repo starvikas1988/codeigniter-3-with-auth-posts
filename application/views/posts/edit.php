@@ -4,7 +4,7 @@
     <title>Edit Post</title>
 </head>
 <body>
-<a href="<?php echo base_url('index.php/auth/logout'); ?>">Logout</a>
+<a href="<?php echo base_url('auth/logout'); ?>">Logout</a>
     <h1>Edit Post</h1>
     <?php if($post->image): ?>
         <img src="<?php echo base_url('uploads/'.$post->image); ?>" alt="Post Image">
