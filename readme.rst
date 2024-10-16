@@ -3,10 +3,12 @@ $config['index_page'] = 'index.php';
 remove index.php here with blank in config/config.php file
 
 and add .htaccess file outside the application folder
+```php
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php/$1 [L]
+```
 ###################
 What is CodeIgniter
 ###################
