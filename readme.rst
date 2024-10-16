@@ -3,19 +3,10 @@ $config['index_page'] = 'index.php';
 remove index.php here with blank in config/config.php file
 
 and add .htaccess file outside the application folder
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase /CodeIgniter-curd/
-
-    # Redirect Trailing Slashes...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)/$ /$1 [L,R=301]
-
-    # Rewrite to remove index.php
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)$ index.php/$1 [L]
-</IfModule>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
 ###################
 What is CodeIgniter
 ###################
