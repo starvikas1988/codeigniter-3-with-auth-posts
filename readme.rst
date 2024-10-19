@@ -1,3 +1,6 @@
+https://chatgpt.com/share/671347c5-b164-800d-9f60-e117f0eee9ad
+
+
 To remove index.php in the url 
 $config['index_page'] = 'index.php';
 remove index.php here with blank in config/config.php file
